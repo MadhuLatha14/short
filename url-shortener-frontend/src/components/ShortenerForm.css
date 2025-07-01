@@ -1,0 +1,92 @@
+.shortener-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 80vh;
+  margin-top: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shortener-left {
+  flex: 1;
+  background-color: #e6ffec; /* Light green background */
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.shortener-right {
+  flex: 1;
+  background: linear-gradient(135deg, #ff4e94, #ff6b81);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.shortener-right h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.shortener-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.shortener-form .MuiButton-containedPrimary {
+  background-color: #ff4e94;
+  margin-top: 10px;
+}
+
+.shortener-form .MuiButton-containedPrimary:hover {
+  background-color: #ff267a;
+}
+
+/* Result Card */
+.shortener-result-card {
+  background-color: white;
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.shortener-result-card:hover {
+  transform: translateY(-5px);
+}
+
+.shortener-link {
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.shortener-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .shortener-container {
+    flex-direction: column;
+  }
+
+  .shortener-right {
+    padding: 20px;
+  }
+
+  .shortener-left {
+    padding: 30px 20px;
+  }
+}
