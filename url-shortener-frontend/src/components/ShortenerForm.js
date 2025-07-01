@@ -13,7 +13,7 @@ import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import axios from "axios";
 import { useTheme } from "@mui/material/styles";
 
-const API_URL = "https://short-28fd.onrender.com";
+const API_URL = "https://short-28fd.onrender.com/shorturls";
 
 const ShortenerForm = () => {
   const theme = useTheme();
