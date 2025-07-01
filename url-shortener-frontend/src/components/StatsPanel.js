@@ -27,10 +27,10 @@ const StatsPanel = () => {
     }
 
     // Extract shortcode from full URL if needed
-    const cleanedCode = shortcode.trim().replace("http://localhost:5000/", "");
+    const cleanedCode = shortcode.trim().replace("https://short-28fd.onrender.com/", "");
 
     try {
-      const res = await axios.get(`http://localhost:5000/shorturls/${cleanedCode}`);
+      const res = await axios.get(`https://short-28fd.onrender.com/shorturls/${cleanedCode}`);
       setData(res.data);
     } catch (err) {
       setError(err.response?.data?.error || "Failed to fetch stats.");
